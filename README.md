@@ -1,40 +1,25 @@
 Cucumber Boilerplate
 ====================
 
-[![Build Status](https://travis-ci.org/webdriverio/cucumber-boilerplate.svg?branch=master)](https://travis-ci.org/webdriverio/cucumber-boilerplate)
-
-***
-
-Boilerplate project to run WebdriverIO tests with [Cucumber](https://cucumber.io/) and brings **true** [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development) to JavaScript. Instead of writing complicated test code that only developers can understand, Cucumber maps an ordinary language to code and allows to start with the test process in the early stages of your product development.
+This biolerplate uses webdriver-io, cucumber and allure for reporting.
+It has a demo application in directory "demo-app" which we have used to run test for demo purpose.
 
 ## Requirements
 
 - Node version 8 or higher
-- A preconfigured Selenium Grid, preinstalled browser driver or cloud provider account
-
-Although this project works fine with NPM we recommend to use Yarn (>= 1.0.0) instead,  due to its speed & solid dependency locking mechanism. To keep things simple we use yarn in this guide, but feel free to replace this with NPM if that is what you are using.
-
-Also this project doesn't cover setting up a proper test environment. You need to download specific browser driver yourself and run the prior starting tests or use a cloud provider like [SauceLabs](https://saucelabs.com/).
+- Global Packages to Install
+npm install -g @wdio/cli
+npm install -g local-web-server
+npm install -g allure-commandline
 
 ## Quick start
 
-Choose one of the following options:
-
-1. Download the latest stable release [here](https://github.com/webdriverio/cucumber-boilerplate/archive/master.zip) or clone the git repo — `git clone https://github.com/webdriverio/cucumber-boilerplate.git`
-
-2. Then:
-- Copy the files to your project into a directory like `/integrationtests` (note the hidden files!)
-
-3. Clean the project (Optional):
-- *On OSX/Linux:*
--- Run `yarn run clean`
-
-- *On Windows:*
--- Remove the directories `/.git`, `/.github`, `/demo-app` & `/test`
--- Remove the files `.travis.yml`, `jest.json` & `wdio.BUILD.conf.js`
--- Remove all the demo features from the `/src/features` directory
-
-4. Install the dependencies (`yarn install`)
+1. Open cmd and goto demo-app directory
+2. Run command --> ws log.format dev
+3. Open another cmd
+4. Run command npm install
+5. Run command npm run test
+6. After the tests completes, Run command npm run allure-report
 
 Now you are ready to write your own features.
 
