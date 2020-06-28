@@ -28,7 +28,7 @@ config.services = [
     [
         'static-server',
         {
-            port: 8080,
+            port: 8000,
             folders: [
                 { mount: '/', path: path.join(__dirname, 'demo-app') },
             ],
