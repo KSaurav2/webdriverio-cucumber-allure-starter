@@ -23,15 +23,6 @@ npm install -g allure-commandline
 
 Now you are ready to write your own features.
 
-## Features
-
-- Super simple setup
-- Full integration with [WebdriverIO](http://webdriver.io/)
-- Over 150 predefined steps that cover almost everything you need, you can start writing tests right away
-- Easy integration with cloud services like [Sauce Labs](https://saucelabs.com/)
-- Integration of WebdriverIO's Multiremote functionality
-- Easy to run tests in parallel
-
 # How to write a test
 
 Tests are written in [Gherkin syntax](https://cucumber.io/docs/gherkin/)
@@ -60,22 +51,6 @@ Scenario: Another test
 
 This test opens the browser and navigates them to google.com to check if the title contains the search
 query after doing a search. As you can see, it is pretty simple and understandable for everyone.
-
-# How to run the test
-
-Start the local web server:
-
-```sh
-$ yarn run local-webserver
-```
-
-To run your tests just call the [WDIO runner](http://webdriver.io/guide/testrunner/gettingstarted.html):
-
-```sh
-$ yarn run wdio
-```
-
-_please note_ The WDIO runner uses the configuration file `wdio.conf.js` by default.
 
 # Configurations
 
